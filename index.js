@@ -1,7 +1,10 @@
 let saludo = "Bienvenidos al sitio de Programas Profesionales";
 alert(saludo);
 
-let seleccionUsuario = parseInt(prompt("¿Desea inscribirse en algún programa? \n 1. Si \n 2. No"));
+let seleccionUsuario = ""
+
+while(seleccionUsuario != 2){
+    seleccionUsuario = parseInt(prompt("¿Desea inscribirse en algún programa? \n 1. Si \n 2. No"));
 
 if(isNaN(seleccionUsuario)){
     alert("Usted no introdujo una respuesta")
@@ -22,10 +25,10 @@ if(isNaN(seleccionUsuario)){
                 case 4:
                 alert("Usted se inscribió en Asociatividad");
                 break;
-                case 3:
+                case 5:
                 alert("Usted se inscribió en Tiempo de Balance");
                 break;
-                case 3:
+                case 6:
                 alert("Usted se inscribió en Mi Vocación");
                 break;
                 default:
@@ -33,8 +36,13 @@ if(isNaN(seleccionUsuario)){
                 break;
         }
    
-}
+}}
 
+
+/*
+do{
+    let seleccionUsuario = parseInt(prompt("¿Desea inscribirse en otro programa? \n 1. Si \n 2. No"));
+}while(consulta == true);
 /*
 let entrada
 do{
